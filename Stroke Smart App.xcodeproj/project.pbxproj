@@ -15,6 +15,7 @@
 		897B80802C3A628A00C41F85 /* Stroke_Smart_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B807F2C3A628A00C41F85 /* Stroke_Smart_AppTests.swift */; };
 		897B808A2C3A628A00C41F85 /* Stroke_Smart_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B80892C3A628A00C41F85 /* Stroke_Smart_AppUITests.swift */; };
 		897B808C2C3A628A00C41F85 /* Stroke_Smart_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B808B2C3A628A00C41F85 /* Stroke_Smart_AppUITestsLaunchTests.swift */; };
+		897B80992C3B129300C41F85 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B80982C3B129300C41F85 /* MainMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		897B80852C3A628A00C41F85 /* Stroke Smart AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stroke Smart AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		897B80892C3A628A00C41F85 /* Stroke_Smart_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stroke_Smart_AppUITests.swift; sourceTree = "<group>"; };
 		897B808B2C3A628A00C41F85 /* Stroke_Smart_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stroke_Smart_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		897B80982C3B129300C41F85 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				897B80702C3A628900C41F85 /* Item.swift */,
 				897B80722C3A628A00C41F85 /* Assets.xcassets */,
 				897B80742C3A628A00C41F85 /* Preview Content */,
+				897B80982C3B129300C41F85 /* MainMenu.swift */,
 			);
 			path = "Stroke Smart App";
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				897B806F2C3A628900C41F85 /* ContentView.swift in Sources */,
 				897B80712C3A628900C41F85 /* Item.swift in Sources */,
 				897B806D2C3A628900C41F85 /* Stroke_Smart_AppApp.swift in Sources */,
+				897B80992C3B129300C41F85 /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
