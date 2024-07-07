@@ -1,57 +1,34 @@
-//
-//  ContentView.swift
-//  Stroke Smart App
-//
-//  Created by Blanco, Ryan on 7/6/24.
-//
-
 import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
+    @State private var showNextView = false
+    @State private var fadeOut = false
+    
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        ZStack {
+            if showNextView {
+                NextView()
+                    .transition(.opacity)
+            } else {
+                let logo = Image("logo")
+                logo
+                    .resizable()
+                    .frame(width: 350, height: 300)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                    .opacity(fadeOut ? 0 : 1)
+                    .onAppear {
+                        withAnimation(.easeInOut(duration: 2)) {
+                            fadeOut = true
+                        }
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            showNextView = true
+                        }
                     }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
             }
         }
+        .animation(.easeInOut, value: showNextView)
     }
 }
 
