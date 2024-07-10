@@ -8,7 +8,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             if showNextView {
-                NextView()
+                MenuView()
                     .transition(.opacity)
             } else {
                 let logo = Image("logo")

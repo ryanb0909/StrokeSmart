@@ -11,11 +11,11 @@
 		897B806F2C3A628900C41F85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B806E2C3A628900C41F85 /* ContentView.swift */; };
 		897B80712C3A628900C41F85 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B80702C3A628900C41F85 /* Item.swift */; };
 		897B80732C3A628A00C41F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897B80722C3A628A00C41F85 /* Assets.xcassets */; };
-		897B80762C3A628A00C41F85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897B80752C3A628A00C41F85 /* Preview Assets.xcassets */; };
 		897B80802C3A628A00C41F85 /* Stroke_Smart_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B807F2C3A628A00C41F85 /* Stroke_Smart_AppTests.swift */; };
 		897B808A2C3A628A00C41F85 /* Stroke_Smart_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B80892C3A628A00C41F85 /* Stroke_Smart_AppUITests.swift */; };
 		897B808C2C3A628A00C41F85 /* Stroke_Smart_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B808B2C3A628A00C41F85 /* Stroke_Smart_AppUITestsLaunchTests.swift */; };
 		897B80992C3B129300C41F85 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B80982C3B129300C41F85 /* MainMenu.swift */; };
+		897B809B2C3C676500C41F85 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B809A2C3C676500C41F85 /* Quiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +41,13 @@
 		897B806E2C3A628900C41F85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		897B80702C3A628900C41F85 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		897B80722C3A628A00C41F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		897B80752C3A628A00C41F85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		897B807B2C3A628A00C41F85 /* Stroke Smart AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stroke Smart AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		897B807F2C3A628A00C41F85 /* Stroke_Smart_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stroke_Smart_AppTests.swift; sourceTree = "<group>"; };
 		897B80852C3A628A00C41F85 /* Stroke Smart AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stroke Smart AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		897B80892C3A628A00C41F85 /* Stroke_Smart_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stroke_Smart_AppUITests.swift; sourceTree = "<group>"; };
 		897B808B2C3A628A00C41F85 /* Stroke_Smart_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stroke_Smart_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		897B80982C3B129300C41F85 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		897B809A2C3C676500C41F85 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +104,7 @@
 				897B80722C3A628A00C41F85 /* Assets.xcassets */,
 				897B80742C3A628A00C41F85 /* Preview Content */,
 				897B80982C3B129300C41F85 /* MainMenu.swift */,
+				897B809A2C3C676500C41F85 /* Quiz.swift */,
 			);
 			path = "Stroke Smart App";
 			sourceTree = "<group>";
@@ -111,7 +112,6 @@
 		897B80742C3A628A00C41F85 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				897B80752C3A628A00C41F85 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -237,7 +237,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897B80762C3A628A00C41F85 /* Preview Assets.xcassets in Resources */,
 				897B80732C3A628A00C41F85 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				897B806F2C3A628900C41F85 /* ContentView.swift in Sources */,
+				897B809B2C3C676500C41F85 /* Quiz.swift in Sources */,
 				897B80712C3A628900C41F85 /* Item.swift in Sources */,
 				897B806D2C3A628900C41F85 /* Stroke_Smart_AppApp.swift in Sources */,
 				897B80992C3B129300C41F85 /* MainMenu.swift in Sources */,
