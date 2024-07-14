@@ -69,16 +69,14 @@ struct MenuView: View {
                                 .foregroundColor(.red)
                             
                             LazyVGrid(columns: [GridItem(), GridItem()], spacing: 20) {
-                                Button(action: {
-                                    print("Med Bottle button tapped")
-                                }) {
+                                
+                                NavigationLink(destination: MedTrackerView()) {
                                     med_bottle
                                         .resizable()
                                         .frame(width: 85, height: 85)
                                         .aspectRatio(contentMode: .fit)
                                         .foregroundColor(.black)
                                 }
-
                                 Button(action: {
                                     print("Calendar button tapped")
                                 }) {
@@ -89,25 +87,21 @@ struct MenuView: View {
                                         .foregroundColor(.black)
                                 }
 
-                                Button(action: {
-                                    print("Book button tapped")
-                                }) {
-                                    book
-                                        .resizable()
-                                        .frame(width: 75, height: 75)
-                                        .aspectRatio(contentMode: .fit)
-                                        .foregroundColor(.black)
-                                }
+                                Link(destination: URL(string: "https://www.strokesmartorg.com/")!) {
+                                            book
+                                                .resizable()
+                                                .frame(width: 75, height: 75)
+                                                .aspectRatio(contentMode: .fit)
+                                                .foregroundColor(.black)
+                                        }
 
-                                Button(action: {
-                                    print("Global button tapped")
-                                }) {
-                                    global
-                                        .resizable()
-                                        .frame(width: 75, height: 75)
-                                        .aspectRatio(contentMode: .fit)
-                                        .foregroundColor(.black)
-                                }
+                                Link(destination: URL(string: "https://www.strokesmartorg.com/")!) {
+                                            global
+                                                .resizable()
+                                                .frame(width: 75, height: 75)
+                                                .aspectRatio(contentMode: .fit)
+                                                .foregroundColor(.black)
+                                        }
                             }
                             .padding(.horizontal)
                             
